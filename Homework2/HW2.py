@@ -30,24 +30,23 @@ while y < x:
 #Написать программу, которая будет складывать, вычитать, умножать или делить два числа.
 
 print("Введите число \n")
-a = int(input())
-b= int(input())
-while a != 0 and b != 0:
-        print("Выберите операцию:")
-        print("1 - a+b")
-        print("2 - a-b")
-        print("3 - a*b")
-        print("4 - a/b")
-        c=int(input())
-        if c==1:
+
+while True:
+    c = input('(+,-,*,/ или 0 для завершения):')
+    if c in ('+','-','*','/'):
+        a = int(input())
+        b = int(input())
+        if c=='+':
             print("Сумма чисел равна:",a+b)
-        elif c==2:
+        elif c=='-':
             print("Разность чисел равна:",a-b)
-        elif c==3:
+        elif c=='*':
             print("Произведение равно:",a*b)
-        elif c==4:
-            print("Частное равно:", a/b)  
-        else:
-            print("Ошибка")
-else:
-    print("Ошибка")
+        elif c=='/':
+            if b != 0:
+                print("Частное равно:", a/b)  
+            else:
+                print ('На ноль делить нельзя!')
+    else:
+        print("Ошибка")
+        
