@@ -13,7 +13,7 @@ while n < 100:
 
 s = 0
 m = 0
-while s < 15:
+while s < 14:
     s += 1
     m += s
     print (m)
