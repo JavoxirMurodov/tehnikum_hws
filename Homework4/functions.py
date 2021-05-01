@@ -1,5 +1,5 @@
 def start():
-    a = int(input("Choose a month:\n"))
+    a = int(input("Choose a month by number:\n"))
     if a == 1 or a == 2 or a == 12:
         print("Winter")
     elif a == 3 or a == 4 or a == 5:
@@ -11,4 +11,5 @@ def start():
     else:
         print("Invalid number!")
     return a
+
 
